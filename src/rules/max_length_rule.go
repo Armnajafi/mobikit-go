@@ -7,7 +7,7 @@ type MaxLengthRule struct {
 
 func (r MaxLengthRule) Validate(value interface{}) (bool, string) {
 	if v, ok := value.(string); ok {
-		if len(v) < r.Max {
+		if len(v) > r.Max {
 			return false, r.Message
 		}
 	}

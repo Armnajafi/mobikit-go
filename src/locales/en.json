@@ -1,0 +1,23 @@
+{
+    "alpha": "The value must contain only alphabetic characters.",
+    "email": "Invalid email address.",
+    "in": "The value must be one of the allowed values.",
+    "json": "Invalid JSON format.",
+    "lowercase": "The value must be lowercase.",
+    "max_length": "The value exceeds the maximum length.",
+    "max": "The value must be less than or equal to the maximum.",
+    "min_length": "The value does not meet the minimum length.",
+    "min": "The value must be greater than or equal to the minimum.",
+    "not_in": "The value must not be one of the disallowed values.",
+    "numeric": "The value must be numeric.",
+    "regex": "The value does not match the required pattern.",
+    "required_if": "This field is required when the condition is met.",
+    "required": "This field is required.",
+    "required_unless": "This field is required unless a specific condition is met.",
+    "required_without_all": "This field is required when none of the specified fields are present.",
+    "required_without": "This field is required when a specific field is not present.",
+    "required_with_all": "This field is required when all specified fields are present.",
+    "required_with": "This field is required when a specific field is present.",
+    "same": "The values must match.",
+    "uppercase": "The value must be uppercase."
+}

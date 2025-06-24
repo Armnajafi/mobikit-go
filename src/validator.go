@@ -3,6 +3,8 @@ package src
 import (
 	"encoding/json"
 	"io/ioutil"
+	"os"
+	"path/filepath"
 )
 
 type Validator struct {
@@ -49,7 +51,11 @@ func (v *Validator) Validate(inputs map[string]interface{}, rules map[string]Rul
 
 // LoadLocale loads the error messages from the specified locale file
 func (v *Validator) LoadLocale(locale string) error {
-	filePath := "src/locales/" + locale + ".json"
+	currentDir, err := os.Getwd()
+	if err != nil {
+		return err
+	}
+	filePath := filepath.Join(currentDir, "src", "locales", locale+".json")
 	data, err := ioutil.ReadFile(filePath)
 	if err != nil {
 		return err
@@ -60,6 +66,6 @@ func (v *Validator) LoadLocale(locale string) error {
 		return err
 	}
 
-	// Here you would store messages in the validator for use
+	// ذخیره‌سازی پیام‌ها در Validator برای استفاده
 	return nil
 }

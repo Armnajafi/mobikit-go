@@ -66,6 +66,5 @@ func (v *Validator) LoadLocale(locale string) error {
 		return err
 	}
 
-	// ذخیره‌سازی پیام‌ها در Validator برای استفاده
 	return nil
 }

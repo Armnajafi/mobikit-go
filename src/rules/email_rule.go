@@ -10,7 +10,7 @@ type EmailRule struct {
 
 func (r EmailRule) Validate(value interface{}) (bool, string) {
 	if v, ok := value.(string); ok {
-		re := regexp.MustCompile(`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$`)
+		re := regexp.MustCompile(`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`)
 		if !re.MatchString(v) {
 			return false, r.Message
 		}

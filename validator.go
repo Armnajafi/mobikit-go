@@ -1,4 +1,4 @@
-package mobikit_go
+package mobikitgo
 
 import (
 	"encoding/json"

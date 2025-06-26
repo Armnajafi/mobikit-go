@@ -1,4 +1,4 @@
-package src
+package mobikit_go
 
 import (
 	"encoding/json"
